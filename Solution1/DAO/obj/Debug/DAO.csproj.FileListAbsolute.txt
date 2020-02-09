@@ -1,0 +1,45 @@
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\DAO.dll.config
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\DAO.dll
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\DAO.pdb
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\BAO.dll
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\EntityFramework.dll
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\BAO.pdb
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\BAO.dll.config
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\EntityFramework.xml
+E:\Arvind\Entity Design Patterns\Solution1\DAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Arvind\Entity Design Patterns\Solution1\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\Arvind\Entity Design Patterns\Solution1\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\Arvind\Entity Design Patterns\Solution1\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\Arvind\Entity Design Patterns\Solution1\DAO\obj\Debug\DAO.dll
+E:\Arvind\Entity Design Patterns\Solution1\DAO\obj\Debug\DAO.pdb
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\DAO.dll.config
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\DAO.dll
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\DAO.pdb
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\BAO.dll
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\EntityFramework.dll
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\BAO.pdb
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\BAO.dll.config
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\EntityFramework.xml
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\obj\Debug\DAO.dll
+E:\Arvind\EntityDesignForProducts\Solution1\DAO\obj\Debug\DAO.pdb
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\DAO.dll.config
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\DAO.dll
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\DAO.pdb
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\BAO.dll
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\EntityFramework.dll
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\BAO.pdb
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\BAO.dll.config
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\EntityFramework.xml
+E:\Arvind\TaskManagementSystem\Solution1\DAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Arvind\TaskManagementSystem\Solution1\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\Arvind\TaskManagementSystem\Solution1\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\Arvind\TaskManagementSystem\Solution1\DAO\obj\Debug\DAO.csproj.CopyComplete
+E:\Arvind\TaskManagementSystem\Solution1\DAO\obj\Debug\DAO.dll
+E:\Arvind\TaskManagementSystem\Solution1\DAO\obj\Debug\DAO.pdb

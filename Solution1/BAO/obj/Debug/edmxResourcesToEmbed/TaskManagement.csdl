@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TASK_MANAGEMENTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TASK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TASK_TYPE_ID" Type="Int32" />
+    <Property Name="TASK_DATE" Type="DateTime" Precision="0" />
+    <Property Name="TASK_DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TASK_TYPE" Relationship="Self.FK__TASK__TASK_TYPE___29572725" FromRole="TASK" ToRole="TASK_TYPE" />
+    <NavigationProperty Name="TASK_ASSIGNMENT" Relationship="Self.FK__TASK_ASSI__TASK___2C3393D0" FromRole="TASK" ToRole="TASK_ASSIGNMENT" />
+  </EntityType>
+  <EntityType Name="TASK_ASSIGNMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TASK_ID" Type="Int32" />
+    <Property Name="WORKER_ID" Type="Int32" />
+    <NavigationProperty Name="TASK" Relationship="Self.FK__TASK_ASSI__TASK___2C3393D0" FromRole="TASK_ASSIGNMENT" ToRole="TASK" />
+    <NavigationProperty Name="WORKER" Relationship="Self.FK__TASK_ASSI__WORKE__2D27B809" FromRole="TASK_ASSIGNMENT" ToRole="WORKER" />
+  </EntityType>
+  <EntityType Name="TASK_TYPE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IS_ACTIVE" Type="Boolean" />
+    <NavigationProperty Name="TASKs" Relationship="Self.FK__TASK__TASK_TYPE___29572725" FromRole="TASK_TYPE" ToRole="TASK" />
+  </EntityType>
+  <EntityType Name="WORKER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WORKER_ID" Type="Int32" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="USER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="IS_ACTIVE" Type="Boolean" />
+    <NavigationProperty Name="TASK_ASSIGNMENT" Relationship="Self.FK__TASK_ASSI__WORKE__2D27B809" FromRole="WORKER" ToRole="TASK_ASSIGNMENT" />
+  </EntityType>
+  <Association Name="FK__TASK__TASK_TYPE___29572725">
+    <End Role="TASK_TYPE" Type="Self.TASK_TYPE" Multiplicity="0..1" />
+    <End Role="TASK" Type="Self.TASK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TASK_TYPE">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TASK">
+        <PropertyRef Name="TASK_TYPE_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TASK_ASSI__TASK___2C3393D0">
+    <End Role="TASK" Type="Self.TASK" Multiplicity="0..1" />
+    <End Role="TASK_ASSIGNMENT" Type="Self.TASK_ASSIGNMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TASK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TASK_ASSIGNMENT">
+        <PropertyRef Name="TASK_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TASK_ASSI__WORKE__2D27B809">
+    <End Role="WORKER" Type="Self.WORKER" Multiplicity="0..1" />
+    <End Role="TASK_ASSIGNMENT" Type="Self.TASK_ASSIGNMENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WORKER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TASK_ASSIGNMENT">
+        <PropertyRef Name="WORKER_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TASK_MANAGEMENTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TASKs" EntityType="Self.TASK" />
+    <EntitySet Name="TASK_ASSIGNMENT" EntityType="Self.TASK_ASSIGNMENT" />
+    <EntitySet Name="TASK_TYPE" EntityType="Self.TASK_TYPE" />
+    <EntitySet Name="WORKERs" EntityType="Self.WORKER" />
+    <AssociationSet Name="FK__TASK__TASK_TYPE___29572725" Association="Self.FK__TASK__TASK_TYPE___29572725">
+      <End Role="TASK_TYPE" EntitySet="TASK_TYPE" />
+      <End Role="TASK" EntitySet="TASKs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TASK_ASSI__TASK___2C3393D0" Association="Self.FK__TASK_ASSI__TASK___2C3393D0">
+      <End Role="TASK" EntitySet="TASKs" />
+      <End Role="TASK_ASSIGNMENT" EntitySet="TASK_ASSIGNMENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TASK_ASSI__WORKE__2D27B809" Association="Self.FK__TASK_ASSI__WORKE__2D27B809">
+      <End Role="WORKER" EntitySet="WORKERs" />
+      <End Role="TASK_ASSIGNMENT" EntitySet="TASK_ASSIGNMENT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

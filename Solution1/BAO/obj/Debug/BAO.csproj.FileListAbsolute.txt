@@ -1,0 +1,34 @@
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\BAO.dll.config
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\BAO.dll
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\BAO.pdb
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\EntityFramework.dll
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\EntityFramework.xml
+E:\Arvind\Entity Design Patterns\Solution1\BAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Arvind\Entity Design Patterns\Solution1\BAO\obj\Debug\BAO.csproj.CoreCompileInputs.cache
+E:\Arvind\Entity Design Patterns\Solution1\BAO\obj\Debug\BAO.csproj.CopyComplete
+E:\Arvind\Entity Design Patterns\Solution1\BAO\obj\Debug\BAO.dll
+E:\Arvind\Entity Design Patterns\Solution1\BAO\obj\Debug\BAO.pdb
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\BAO.dll.config
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\BAO.dll
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\BAO.pdb
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\EntityFramework.dll
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\EntityFramework.xml
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\obj\Debug\BAO.csprojAssemblyReference.cache
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\obj\Debug\BAO.csproj.CoreCompileInputs.cache
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\obj\Debug\BAO.csproj.CopyComplete
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\obj\Debug\BAO.dll
+E:\Arvind\EntityDesignForProducts\Solution1\BAO\obj\Debug\BAO.pdb
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\BAO.dll.config
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\BAO.dll
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\BAO.pdb
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\EntityFramework.dll
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\EntityFramework.SqlServer.dll
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\EntityFramework.xml
+E:\Arvind\TaskManagementSystem\Solution1\BAO\bin\Debug\EntityFramework.SqlServer.xml
+E:\Arvind\TaskManagementSystem\Solution1\BAO\obj\Debug\BAO.csproj.CoreCompileInputs.cache
+E:\Arvind\TaskManagementSystem\Solution1\BAO\obj\Debug\BAO.csproj.CopyComplete
+E:\Arvind\TaskManagementSystem\Solution1\BAO\obj\Debug\BAO.dll
+E:\Arvind\TaskManagementSystem\Solution1\BAO\obj\Debug\BAO.pdb

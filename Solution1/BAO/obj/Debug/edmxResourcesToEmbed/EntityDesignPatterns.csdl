@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntityDesignForProductsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustId" />
+    </Key>
+    <Property Name="CustId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustFname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CustLname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CustEmail" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="IsPurchaser" Type="Boolean" />
+    <NavigationProperty Name="sales" Relationship="Self.FK__sale__SaleCustom__33D4B598" FromRole="Customer" ToRole="sale" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Name="PaymentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaymentDate" Type="DateTime" Precision="0" />
+    <Property Name="PaymentDescription" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Rate" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="sales" Relationship="Self.FK__sale__SaleProduc__34C8D9D1" FromRole="Product" ToRole="sale" />
+  </EntityType>
+  <EntityType Name="sale">
+    <Key>
+      <PropertyRef Name="SaleId" />
+    </Key>
+    <Property Name="SaleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SaleDate" Type="DateTime" Precision="0" />
+    <Property Name="SaleCustomerId" Type="Int32" />
+    <Property Name="SaleProductId" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Tax" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="NetAmount" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK__sale__SaleCustom__33D4B598" FromRole="sale" ToRole="Customer" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__sale__SaleProduc__34C8D9D1" FromRole="sale" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK__sale__SaleCustom__33D4B598">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="sale" Type="Self.sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustId" />
+      </Principal>
+      <Dependent Role="sale">
+        <PropertyRef Name="SaleCustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__sale__SaleProduc__34C8D9D1">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="sale" Type="Self.sale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="sale">
+        <PropertyRef Name="SaleProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EntityDesignForProductsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="Payments" EntityType="Self.Payment" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="sales" EntityType="Self.sale" />
+    <AssociationSet Name="FK__sale__SaleCustom__33D4B598" Association="Self.FK__sale__SaleCustom__33D4B598">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="sale" EntitySet="sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK__sale__SaleProduc__34C8D9D1" Association="Self.FK__sale__SaleProduc__34C8D9D1">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="sale" EntitySet="sales" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

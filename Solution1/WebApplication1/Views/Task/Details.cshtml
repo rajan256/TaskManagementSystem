@@ -1,0 +1,42 @@
+﻿@model BAO.TASK
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TASK</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TASK_TYPE_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TASK_TYPE_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TASK_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TASK_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TASK_DESCRIPTION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TASK_DESCRIPTION)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

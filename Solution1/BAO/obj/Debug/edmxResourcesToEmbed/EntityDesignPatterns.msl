@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityDesignForProductsModelStoreContainer" CdmEntityContainer="EntityDesignForProductsEntities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="EntityDesignForProductsModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+          <ScalarProperty Name="CustFname" ColumnName="CustFname" />
+          <ScalarProperty Name="CustLname" ColumnName="CustLname" />
+          <ScalarProperty Name="CustEmail" ColumnName="CustEmail" />
+          <ScalarProperty Name="IsPurchaser" ColumnName="IsPurchaser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="EntityDesignForProductsModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="PaymentDescription" ColumnName="PaymentDescription" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="EntityDesignForProductsModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales">
+      <EntityTypeMapping TypeName="EntityDesignForProductsModel.sale">
+        <MappingFragment StoreEntitySet="sale">
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SaleCustomerId" ColumnName="SaleCustomerId" />
+          <ScalarProperty Name="SaleProductId" ColumnName="SaleProductId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

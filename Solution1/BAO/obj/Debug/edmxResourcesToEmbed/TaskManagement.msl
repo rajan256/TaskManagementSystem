@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TASK_MANAGEMENTModelStoreContainer" CdmEntityContainer="TASK_MANAGEMENTEntities">
+    <EntitySetMapping Name="TASKs">
+      <EntityTypeMapping TypeName="TASK_MANAGEMENTModel.TASK">
+        <MappingFragment StoreEntitySet="TASK">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TASK_TYPE_ID" ColumnName="TASK_TYPE_ID" />
+          <ScalarProperty Name="TASK_DATE" ColumnName="TASK_DATE" />
+          <ScalarProperty Name="TASK_DESCRIPTION" ColumnName="TASK_DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TASK_ASSIGNMENT">
+      <EntityTypeMapping TypeName="TASK_MANAGEMENTModel.TASK_ASSIGNMENT">
+        <MappingFragment StoreEntitySet="TASK_ASSIGNMENT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TASK_ID" ColumnName="TASK_ID" />
+          <ScalarProperty Name="WORKER_ID" ColumnName="WORKER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TASK_TYPE">
+      <EntityTypeMapping TypeName="TASK_MANAGEMENTModel.TASK_TYPE">
+        <MappingFragment StoreEntitySet="TASK_TYPE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WORKERs">
+      <EntityTypeMapping TypeName="TASK_MANAGEMENTModel.WORKER">
+        <MappingFragment StoreEntitySet="WORKER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WORKER_ID" ColumnName="WORKER_ID" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="IS_ACTIVE" ColumnName="IS_ACTIVE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa11dd4ca33d453c817006087e485425" Name="Diagram1">
+        <EntityTypeShape EntityType="TASK_MANAGEMENTModel.TASK" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TASK_MANAGEMENTModel.TASK_ASSIGNMENT" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TASK_MANAGEMENTModel.TASK_TYPE" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TASK_MANAGEMENTModel.WORKER" Width="1.5" PointX="2.875" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="TASK_MANAGEMENTModel.FK__TASK__TASK_TYPE___29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="TASK_MANAGEMENTModel.FK__TASK_ASSI__TASK___2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="TASK_MANAGEMENTModel.FK__TASK_ASSI__WORKE__2D27B809" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
