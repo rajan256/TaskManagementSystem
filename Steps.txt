@@ -1,7 +1,0 @@
-1. Open Sql Server 
-2. Open DBQuery file in Sql Server and Execute Commands
-3. Open Project in Visual Studio 
-4. Click on We.Config File under (Front End->WebApplication1->Web.Config) 
-5. Replace the name of server within your Sql ServerName 
-6. Run Application 
-7. Thanks 
